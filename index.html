@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Hai</title>
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<!--
+  Name: Mohamad Farhan
+  Template: Nembak Betina v3 (particles + clock + theme edition)
+-->
+<body>
+  <div id="particles-js"></div>
+
+  <audio id="bgMusic" src="song.mp3" loop preload="auto"></audio>
+
+  <div class="top-bar">
+    <button id="themeToggle" type="button" aria-label="Ganti warna">🎨</button>
+    <div class="clock-wrap">
+      <div id="clockTime">00:00:00</div>
+      <div id="clockGreet">Hai</div>
+    </div>
+    <button id="musicToggle" type="button" aria-label="Putar musik">♪</button>
+  </div>
+
+  <!-- Panel ganti warna -->
+  <div class="theme-panel" id="themePanel" aria-hidden="true">
+    <p class="theme-panel-title">Pilih warna</p>
+    <div class="theme-swatches">
+      <button class="swatch" data-theme="sunset" style="background:linear-gradient(135deg,#ff6a88,#a18cd1)"></button>
+      <button class="swatch" data-theme="ocean" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"></button>
+      <button class="swatch" data-theme="peach" style="background:linear-gradient(135deg,#ffb199,#ff0844)"></button>
+      <button class="swatch" data-theme="lavender" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"></button>
+      <button class="swatch" data-theme="mint" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"></button>
+      <button class="swatch" data-theme="night" style="background:linear-gradient(135deg,#232946,#6b6f9e)"></button>
+    </div>
+    <label class="theme-custom-label" for="customColor">Warna sendiri</label>
+    <input type="color" id="customColor" value="#ff6a88" />
+  </div>
+
+  <section>
+    <div class="card">
+      <h1>Hai</h1>
+      <p>Boleh nanya sesuatu nggak? Aku suka sama kamu, mau nggak jadi pacar aku?</p>
+
+      <p class="quote" id="quoteText"></p>
+
+      <div class="btn-row">
+        <div class="wrap">
+          <a href="#modal-one" class="btn btn-big">Mau</a>
+        </div>
+        <div class="wrap2">
+          <a href="#modal-one2" class="btn btn2 btn-big2">Nggak dulu</a>
+        </div>
+      </div>
+
+      <!-- Modal Mau -->
+      <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h2>Serius nih?</h2>
+            <a href="#close" class="btn-close" aria-hidden="true">×</a>
+            <p>
+              Sebenernya udah lama mau ngomong, baru sekarang berani.
+              Kirim jawaban kamu ya, biar aku nggak nunggu-nunggu lagi.
+            </p>
+          </div>
+          <div class="modal-body">
+            <img class="gambar1w" src="kucing.jpg" alt="kucing" />
+          </div>
+          <div class="modal-footer">
+            <a href="https://wa.me/6281992015582?text=Iya%2C%20aku%20mau" class="btn">Kirim Jawaban</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Tidak -->
+      <div class="modal2" id="modal-one2" aria-hidden="true">
+        <div class="modal-dialog2">
+          <div class="modal-header2">
+            <h2>Oke, nggak apa-apa</h2>
+            <a href="#close2" class="btn-close2" aria-hidden="true">×</a>
+            <p>
+              Gapapa kok kalau belum siap atau emang bukan rezeki.
+              Kalau mau kasih tau alasannya, boleh banget, biar aku ngerti aja.
+            </p>
+          </div>
+          <div class="modal-body2">
+            <img class="gambar1" src="buset.jpg" alt="ekspresi" />
+          </div>
+          <div class="modal-footer2">
+            <a href="https://wa.me/6281992015582?text=Maaf%2C%20aku%20belum%20bisa" class="btn2">Kirim Jawaban</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js?v=2"></script>
+</body>
+</html>
